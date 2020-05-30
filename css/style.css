@@ -95,11 +95,80 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
+}
+
+.header .right-bg {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.03;
+  background-image: url("/img/png/cocacola_logo@0,5x.png");
+  background-position: bottom -2rem right -8rem;
+  background-repeat: no-repeat;
+  background-size: 400% 115%;
+}
+
+.header .middle {
+  z-index: 1000;
+  position: absolute;
+  height: 100vh;
+  width: 38rem;
+  top: 0;
+}
+
+.header .middle h1 {
+  color: white;
+  transform: rotate(-90deg);
+  text-align: center;
+  padding-right: 7rem;
+}
+
+.header .hero__text-bottom {
+  position: relative;
+}
+
+.header .hero__text-bottom .bg {
+  position: absolute;
+  background-color: rgba(62, 29, 48, 0.5);
+  height: 6rem;
+  width: 15rem;
+  right: 0;
+  top: -1.8rem;
+}
+
+.header .hero__text-bottom .text-right {
+  text-align: end;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  position: absolute;
+  letter-spacing: 0.5rem;
+}
+
+.header .left .header__content {
+  line-height: 3rem;
+}
+
+.header .btn-right {
+  text-align: end;
+}
+
+.header .hero__text-middle {
+  text-align: center;
+  line-height: 4rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  margin-left: 7rem;
 }
 
 .header .right, .header .left {
   height: 100vh;
   width: 50vw;
+}
+
+.header .right {
+  position: relative;
 }
 
 .header .text-bottom {
